@@ -86,5 +86,9 @@
     "autoAlign": false,
     "continueThemeAcrossLines": false
   },
+  "installation": {
+    "method": "pinned",
+    "installedVersion": "2.2.27"
+  },
   "exportedBy": "2.2.27"
 }
