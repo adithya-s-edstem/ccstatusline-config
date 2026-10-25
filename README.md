@@ -33,29 +33,6 @@ Set up my Claude Code status line with ccstatusline (https://github.com/sirmallo
 6. Tell me where the backup is and that the new status line appears on the next refresh.
 ```
 
-## Install
-Launch the TUI and choose **Pinned global install**. This installs ccstatusline globally and writes the status line command to Claude Code's settings:
-```bash
-npx -y ccstatusline@latest
-```
-
-This adds the following to `~/.claude/settings.json`:
-```json
-"statusLine": {
-  "type": "command",
-  "command": "ccstatusline",
-  "padding": 0
-}
-```
-
-## Restore this config
-Copy the config to where ccstatusline reads it:
-```bash
-mkdir -p ~/.config/ccstatusline
-cp ccstatusline-config.json ~/.config/ccstatusline/settings.json
-```
-On Windows the path is `%USERPROFILE%\.config\ccstatusline\settings.json`.
-
 ## Save changes back to the repo
 After editing in the TUI (`ccstatusline`), copy the live config back here so the repo stays current:
 ```bash
