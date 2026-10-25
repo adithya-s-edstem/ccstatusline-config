@@ -19,6 +19,20 @@ My [ccstatusline](https://github.com/sirmalloc/ccstatusline) setup for the Claud
 
 Usage meters share blue and reset timers share red.
 
+## Set up with Claude Code
+Paste this prompt into Claude Code to install ccstatusline and apply this config:
+
+```text
+Set up my Claude Code status line with ccstatusline (https://github.com/sirmalloc/ccstatusline) using the config from https://github.com/adithya-s-edstem/ccstatusline-config. Steps:
+
+1. Install ccstatusline globally: npm i -g ccstatusline@latest (use bun if npm isn't available). Confirm the `ccstatusline` command is on PATH.
+2. If ~/.config/ccstatusline/settings.json exists, back it up to settings.json.bak-<today's date> in the same folder before changing anything.
+3. Download https://raw.githubusercontent.com/adithya-s-edstem/ccstatusline-config/main/ccstatusline-config.json and save it as ~/.config/ccstatusline/settings.json (create the folder if needed; on Windows this is %USERPROFILE%\.config\ccstatusline\settings.json).
+4. In ~/.claude/settings.json, set "statusLine" to {"type": "command", "command": "ccstatusline", "padding": 0}. Keep every other setting as is, and show me the old statusLine value if one existed.
+5. Verify: pipe sample input into it, e.g. echo '{"model":{"display_name":"Opus"},"cwd":"."}' | ccstatusline, and show me the output. It should print git, model, session usage and weekly usage lines.
+6. Tell me where the backup is and that the new status line appears on the next refresh.
+```
+
 ## Install
 Launch the TUI and choose **Pinned global install**. This installs ccstatusline globally and writes the status line command to Claude Code's settings:
 ```bash
