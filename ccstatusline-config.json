@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "lines": [
     [
       {
@@ -15,23 +15,19 @@
       {
         "id": "ec46d7ab-3896-4010-bf32-b1767994ee76",
         "type": "git-review",
-        "color": "brightCyan",
-        "metadata": {
-          "hideStatus": "false",
-          "hideTitle": "false"
-        }
+        "color": "brightCyan"
       }
     ],
     [
       {
         "id": "412b2f8f-0c57-473d-bc2e-2fdfc2755bdd",
         "type": "model",
-        "color": "brightCyan"
+        "color": "brightWhite"
       },
       {
         "id": "cee1bb45-9896-4641-b12d-602d3d40900a",
         "type": "context-bar",
-        "color": "brightBlue",
+        "color": "brightGreen",
         "metadata": {
           "display": "progress-short"
         }
@@ -47,12 +43,26 @@
         }
       },
       {
-        "id": "1f18239f-7f1f-4d4c-8df5-3da947e147b4",
-        "type": "weekly-usage"
-      },
-      {
         "id": "b650da7b-fdf7-4c94-9d9f-c9af67b88808",
         "type": "reset-timer",
+        "color": "brightRed",
+        "metadata": {
+          "display": "time"
+        }
+      }
+    ],
+    [
+      {
+        "id": "1f18239f-7f1f-4d4c-8df5-3da947e147b4",
+        "type": "weekly-usage",
+        "color": "brightBlue",
+        "metadata": {
+          "display": "progress-short"
+        }
+      },
+      {
+        "id": "weekly-reset-timer-1",
+        "type": "weekly-reset-timer",
         "color": "brightRed",
         "metadata": {
           "display": "time"
@@ -69,6 +79,8 @@
   "inheritSeparatorColors": false,
   "globalBold": false,
   "gitCacheTtlSeconds": 5,
+  "terminalWidthCacheTtlSeconds": 5,
+  "customCommandCacheTtlSeconds": 0,
   "minimalistMode": false,
   "powerline": {
     "enabled": false,
@@ -88,7 +100,6 @@
   },
   "installation": {
     "method": "pinned",
-    "installedVersion": "2.2.27"
-  },
-  "exportedBy": "2.2.27"
+    "installedVersion": "2.2.32"
+  }
 }
