@@ -39,8 +39,8 @@ Update my ccstatusline (https://github.com/sirmalloc/ccstatusline) Claude Code s
 ```
  ⎇ main / (+0,-0) / (no PR)
  Opus 5.5 / medium / Context: [context bar] 66k/200k (33%)
- 5h: [░░░░░░░░░░░░░░░░] 2.0% / 2h 10m
- Weekly: [░░░░░░░░░░░░░░░░] 0.0% / 5d 8hr 30m
+ 5h: [░░░░░░░░░░░░░░░░] 2.0% / Reset: 2hr 10m
+ Weekly: [░░░░░░░░░░░░░░░░] 0.0% / Weekly Reset: 5d 8hr 30m
 ```
 
 | Line | Widgets | Colors |
@@ -50,7 +50,7 @@ Update my ccstatusline (https://github.com/sirmalloc/ccstatusline) Claude Code s
 | 3 | 5-hour block usage, 5-hour reset timer | blue, red |
 | 4 | weekly usage, weekly reset timer | blue, red |
 
-Usage meters share blue and reset timers share red. Labels are kept only where a value would be ambiguous (branch icon, Context, 5h, Weekly); everything else shows its raw value.
+Usage meters share blue and reset timers share red. Labels are kept only where a value would be ambiguous (branch icon, Context, 5h, Weekly, and the Reset / Weekly Reset timers); everything else shows its raw value.
 
 ## Save changes back to the repo
 After editing in the TUI (`ccstatusline`), copy the live config back here so the repo stays current:

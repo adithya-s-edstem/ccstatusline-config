@@ -57,8 +57,7 @@
         "color": "brightRed",
         "metadata": {
           "display": "time"
-        },
-        "rawValue": true
+        }
       }
     ],
     [
@@ -76,8 +75,7 @@
         "color": "brightRed",
         "metadata": {
           "display": "time"
-        },
-        "rawValue": true
+        }
       }
     ]
   ],
