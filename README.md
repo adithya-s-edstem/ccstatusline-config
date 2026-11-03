@@ -2,7 +2,7 @@
 
 My [ccstatusline](https://github.com/sirmalloc/ccstatusline) setup for the Claude Code status line.
 
-![Status line showing git, model and context, 5-hour usage, and weekly usage](assets/statusline.png)
+![Status line showing git, model, effort and context, 5-hour usage, and weekly usage](assets/statusline.png)
 
 ## Prompts
 Paste one of these into Claude Code.
@@ -17,7 +17,7 @@ Set up my Claude Code status line with ccstatusline (https://github.com/sirmallo
 2. If ~/.config/ccstatusline/settings.json exists, back it up to settings.json.bak-<today's date> in the same folder before changing anything.
 3. Download https://raw.githubusercontent.com/adithya-s-edstem/ccstatusline-config/main/ccstatusline-config.json and save it as ~/.config/ccstatusline/settings.json (create the folder if needed; on Windows this is %USERPROFILE%\.config\ccstatusline\settings.json).
 4. In ~/.claude/settings.json, set "statusLine" to {"type": "command", "command": "ccstatusline", "padding": 0}. Keep every other setting as is, and show me the old statusLine value if one existed.
-5. Verify: pipe sample input into it, e.g. echo '{"model":{"display_name":"Opus"},"cwd":"."}' | ccstatusline, and show me the output. It should print git, model, session usage and weekly usage lines.
+5. Verify: pipe sample input into it, e.g. echo '{"model":{"display_name":"Opus"},"cwd":"."}' | ccstatusline, and show me the output. It should print git, model and effort, session usage and weekly usage lines.
 6. Tell me where the backup is and that the new status line appears on the next refresh.
 ```
 
@@ -38,19 +38,19 @@ Update my ccstatusline (https://github.com/sirmalloc/ccstatusline) Claude Code s
 ## Layout
 ```
  ⎇ main / (+0,-0) / (no PR)
- Model: Opus 5.5 / [context bar]
- 5h: [░░░░░░░░░░░░░░░░] 2.0% / Reset: 2h 10m
- Weekly: [░░░░░░░░░░░░░░░░] 0.0% / Weekly Reset: 5d 8hr 30m
+ Opus 5.5 / medium / Context: [context bar] 66k/200k (33%)
+ 5h: [░░░░░░░░░░░░░░░░] 2.0% / 2h 10m
+ Weekly: [░░░░░░░░░░░░░░░░] 0.0% / 5d 8hr 30m
 ```
 
 | Line | Widgets | Colors |
 |---|---|---|
 | 1 | git branch, git changes, PR review | magenta, yellow, cyan |
-| 2 | model, context bar | white, green |
+| 2 | model, thinking effort, context bar | white, orange, green |
 | 3 | 5-hour block usage, 5-hour reset timer | blue, red |
 | 4 | weekly usage, weekly reset timer | blue, red |
 
-Usage meters share blue and reset timers share red.
+Usage meters share blue and reset timers share red. Labels are kept only where a value would be ambiguous (branch icon, Context, 5h, Weekly); everything else shows its raw value.
 
 ## Save changes back to the repo
 After editing in the TUI (`ccstatusline`), copy the live config back here so the repo stays current:
