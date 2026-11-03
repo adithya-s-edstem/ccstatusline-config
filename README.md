@@ -6,7 +6,7 @@ My [ccstatusline](https://github.com/sirmalloc/ccstatusline) setup for the Claud
 ```
  ⎇ main / (+0,-0) / (no PR)
  Model: Opus 5.5 / [context bar]
- Session: [░░░░░░░░░░░░░░░░] 2.0% / Reset: 2h 10m
+ 5h: [░░░░░░░░░░░░░░░░] 2.0% / Reset: 2h 10m
  Weekly: [░░░░░░░░░░░░░░░░] 0.0% / Weekly Reset: 5d 8hr 30m
 ```
 
